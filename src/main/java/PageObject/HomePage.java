@@ -27,8 +27,8 @@ public class HomePage {
 	@AndroidFindBy(id="com.androidsample.generalstore:id/nameField")
 	public AndroidElement textbox1;
 	
-//	@AndroidFindBy(className="android.widget.Spinner")
-//	public WebElement dropdownlist;
+	@AndroidFindBy(className="android.widget.Spinner")
+	public WebElement dropdownlist;
 	
 	public WebElement getNameField() {
 		 wait.until(ExpectedConditions.visibilityOf(textbox1));
